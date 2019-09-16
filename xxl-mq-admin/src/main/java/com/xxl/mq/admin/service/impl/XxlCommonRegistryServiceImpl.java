@@ -242,10 +242,10 @@ public class XxlCommonRegistryServiceImpl implements XxlCommonRegistryService, I
                             // refresh or add
                             int ret = xxlCommonRegistryDataDao.refresh(xxlCommonRegistryData);
                             if (ret == 0) {
-                                xxlCommonRegistryDataDao.add(xxlCommonRegistryData);
-                            }
+                            xxlCommonRegistryDataDao.add(xxlCommonRegistryData);
+                        }
 
-                            // valid file status
+                        // valid file status
                             XxlCommonRegistry fileXxlCommonRegistry = getFileRegistryData(xxlCommonRegistryData);
                             if (fileXxlCommonRegistry!=null && fileXxlCommonRegistry.getDataList().contains(xxlCommonRegistryData.getValue())) {
                                 continue;     // "Repeated limited."

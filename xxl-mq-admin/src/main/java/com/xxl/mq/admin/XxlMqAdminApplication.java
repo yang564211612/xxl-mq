@@ -11,6 +11,7 @@ public class XxlMqAdminApplication {
 
 	public static void main(String[] args) {
         SpringApplication.run(XxlMqAdminApplication.class, args);
+
 	}
 
 }

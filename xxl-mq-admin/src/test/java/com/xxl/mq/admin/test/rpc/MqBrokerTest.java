@@ -10,7 +10,7 @@ import com.xxl.rpc.serialize.Serializer;
 public class MqBrokerTest {
 
     public static void main(String[] args) {
-        String address = "127.0.0.1:7080";
+        String address = "127.0.0.1:8080";
 
         IXxlMqBroker xxlMqBroker = (IXxlMqBroker) new XxlRpcReferenceBean(
                 NetEnum.NETTY,

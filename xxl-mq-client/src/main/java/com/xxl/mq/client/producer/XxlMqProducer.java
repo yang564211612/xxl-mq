@@ -69,6 +69,9 @@ public class XxlMqProducer {
         if (mqMessage.getEffectTime() == null) {
             mqMessage.setEffectTime(new Date());
         }
+        if (mqMessage.getAddTime() == null) {
+            mqMessage.setAddTime(new Date());
+        }
 
         // timeout
         if (mqMessage.getTimeout() < 0) {

@@ -17,7 +17,7 @@ public class XxlMqProducerTest {
     @Test
     public void test() throws InterruptedException {
 
-        int msgNum = 10000;
+        int msgNum = 10;
         long start = System.currentTimeMillis();
         for (int i = 0; i < msgNum; i++) {
             XxlMqProducer.produce(new XxlMqMessage("topic_1", "Data:"+i));
